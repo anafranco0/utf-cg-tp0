@@ -1,0 +1,20 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+}  
+
+h1{
+    font-family: fantasy;
+}
+
+.imagem-centrada {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1{color: aquamarine;}

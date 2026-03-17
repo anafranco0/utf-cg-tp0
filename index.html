@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="author" content="Ana Franco">
+        <meta name="description" content="Trabalho Prático 0 - Minha Primeira Página Web">
+
+        <title>Ana Clara M Franco</title>
+
+        <link rel="icon" href="icone.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+
+        
+    </head>
+    <body>
+        <h1>Blog do Duque</h1>
+
+        <h2>Chegada em casa</h2>
+        <img src="img/DuqueFilhote.jpeg" class="imagem-centrada" alt="Duque filhote" title="Duque quando era filhote" width="500" height="500">
+
+        <h2>Primeiras coisas</h2>
+        <img id="fotoAlvo" src="img/DuquePrimeiroPasseio.jpeg" class="imagem-centrada" alt="Duque filhote" title="Duque depois do primeiro passeio" width="500" height="500">
+
+        <p id="descricao">Nesse dia ele descobriu a melhor coisa do mundo o passeio</p>
+
+        <button id="botaoMisterioso">Clique aqui</button>
+
+         <script>
+            const botao = document.getElementById("botaoMisterioso");
+            const foto = document.getElementById("fotoAlvo");
+            const descricao = document.getElementById("descricao");
+
+            botao.addEventListener("click", function() {
+                // Troca a imagem
+                foto.setAttribute("src", "img/DuquePrimeiroBanho.jpeg");
+                foto.setAttribute("alt", "Cara feia para o banho");
+                foto.style.border = "3px solid green";
+
+                // Troca o texto do parágrafo
+                descricao.textContent = "Com as maiores alegrias as vezes vem também as maiores tristezas";
+            });
+        </script>
+
+
+    </body>
+</html>
