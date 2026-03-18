@@ -18,3 +18,15 @@ h1{
   }
 
   h1{color: aquamarine;}
+
+a {
+    color: aliceblue;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover, a:active {
+    color: #eee;
+}
