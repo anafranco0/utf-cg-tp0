@@ -15,16 +15,49 @@
         
     </head>
     <body>
-        <h1>Blog do Duque</h1>
+        <header>
+            <h1>Blog do Duque</h1>
 
-        <h2>Chegada em casa</h2>
-        <img src="img/DuqueFilhote.jpeg" class="imagem-centrada" alt="Duque filhote" title="Duque quando era filhote" width="500" height="500">
+            <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                <a href="#filhote">Tempos de Filhote</a>
+                </li>
+                <li>
+                <a href="#primeiras">Primeiras Experiências</a>
+                </li>
+                <li>
+                <a href="#atualmente">Atualidades</a>
+                </li>
+            </ul>
+            </nav>
+        </header>
+        
 
-        <h2>Primeiras coisas</h2>
-        <img id="fotoAlvo" src="img/DuquePrimeiroPasseio.jpeg" class="imagem-centrada" alt="Duque filhote" title="Duque depois do primeiro passeio" width="500" height="500">
+        <h2 id="filhote">Chegada em casa</h2>
+        <p>Em agosto de 2023, chegou em casa a coisa mais fofinha do mundo o Duque, depois de uma viagem de 1h30 ida e volta ele chegou. Depois de 19 anos pedindo um cachorrinho finalmente eu tinha um para poder chamar de meu. Era muito pequenininho a ponto de caber na palma da mão.</p>
+        <br>
 
-        <p id="descricao">Nesse dia ele descobriu a melhor coisa do mundo o passeio</p>
+        <figure>
+            <img src="img/DuqueFilhote.jpeg" class="imagem-centrada" alt="Duque filhote" title="Duque quando era filhote" width="500" height="500">
 
+            <figcaption style="text-align: center;">Duque no dia que ele chegou em casa</figcaption>
+        </figure>
+
+        
+
+        <br>
+        <hr>
+
+        <h2 id="primeiras">Primeiras coisas</h2>
+        <p>Depois de todas as vacinas ele finalmente pode passear no chão por conta própria, pois antes ele só podia passear no colo, uma vez que não é recomendado o cachorrinho ter contato com possíveis áreas contaminadas,  como o chão, antes das vacinas. Ao passear ele descobriu um mundo novo e ficou todo feliz com a nova descoberta. Porém nem tudo são flores... (Clique no botão para continuar a história)</p>
+
+        <figure>
+             <img id="fotoAlvo" src="img/DuquePrimeiroPasseio.jpeg" class="imagem-centrada" alt="Duque filhote" title="Duque depois do primeiro passeio" width="500" height="500">
+
+             <figcaption id="descricao" style="text-align: center;">Nesse dia ele descobriu a melhor coisa do mundo o passeio</figcaption>
+        </figure>
+       
         <button id="botaoMisterioso">Clique aqui</button>
 
          <script>
@@ -34,15 +67,38 @@
 
             botao.addEventListener("click", function() {
                 // Troca a imagem
+                foto.setAttribute("title", "Primeiro banho");
                 foto.setAttribute("src", "img/DuquePrimeiroBanho.jpeg");
-                foto.setAttribute("alt", "Cara feia para o banho");
+                foto.setAttribute("alt", "Duque fazendo cara feia durante o banho");
                 foto.style.border = "3px solid green";
 
                 // Troca o texto do parágrafo
-                descricao.textContent = "Com as maiores alegrias as vezes vem também as maiores tristezas";
+                descricao.textContent = "Com as maiores alegrias ás vezes vem também as maiores tristezas. Acho que ele não gostou da ideia de ter q tomar banho depois do passeio!";
             });
         </script>
 
+        <br>
+        <hr>
+
+        <h2 id="atualmente">Atualmente</h2>
+
+        <p>Atualmente, ele já tá um menino grandinho! Prendeu vários truques, conheceu muitos amigos e continua amando passear!</p>
+
+        <figure>
+             <img src="img/DuqueCarnaval.jpeg" class="imagem-centrada" alt="Duque no Carnaval nos dias atuais" title="Duque atualmente" width="500" height="500">
+
+             <figcaption style="text-align: center;">
+                Foto em um passeio especial na atualidade
+             </figcaption>
+        </figure>
+
+       <hr>
+    <footer>
+        &lt; &lt; &lt; &copy; Duque Enterprises &gt;&gt;&gt;
+        <p>
+        <a href="#">Back to Top</a>
+        </p>
+    </footer>
 
     </body>
 </html>
